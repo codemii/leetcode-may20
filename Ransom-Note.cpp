@@ -7,7 +7,7 @@ class Solution{
 				return false;
 			int i, ransom[26]={0}, mag[26]={0};
 			for(i=0; i<ransomeNote.length(); i++){
-				ransom[ransomeNote[i]='a']++;
+				ransom[ransomeNote[i]-'a']++;
 			}
 			for(i=0; i<magazine.length(); i++){
 				mag[magazine[i]-'a']++;
